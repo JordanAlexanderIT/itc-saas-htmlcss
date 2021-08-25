@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITC SaaS Assignment</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- ctrl+d will select the next element of the same type -->
+  <!-- You can type .whatever class and create a div -->
+  <!-- Alt+B Opens in browser -->
+  <div class="page-container">
+    <div class="sidebar">
+      <div class="saas-kit">
+        <h1>SaaS Kit</h1>
+      </div>
+      <div class="sidebar-wrapper">
+        <div class="profile-sidebar">
+          <div class="profile-sidebar-left">
+            <img src="./img/sierra-circle.svg" />
+          </div>
+          <div class="profile-sidebar-right">
+            <div class="sidebar-username">Sierra Ferguson</div>
+            <div class="sidebar-email">sferguson@gmail.com</div>
+          </div>
+        </div>
+        <ul>
+          <li class="active-li">
+            <img src="./img/dashboard-active.svg" /> Dashboard
+          </li>
+          <li><img src="./img/tasks.svg" /> Tasks</li>
+          <li><img src="./img/email.svg" /> Email</li>
+          <li><img src="./img/contacts.svg" /> Contacts</li>
+          <li><img src="./img/chat.svg" /> Chat</li>
+          <li><img src="./img/deals.svg" /> Deals</li>
+        </ul>
+      </div>
+      <div class="fullwidth-sidebar-divider"></div>
+      <div class="settings-sidebar">
+        <img src="./img/settings.svg" /> Settings
+      </div>
+      <div class="sidebar-toggle"><img src="./img/toggle_sidebar.svg" /></div>
+    </div>
+    <div class="main">
+      <div class="searchbar-wrapper">
+        <div class="searchbar-input-block">
+          <img src="./img/mag-glass.svg" />
+          <input type="text" placeholder="Global search" />
+        </div>
+        <img src="./img/notifications.png" class="bell" />
+      </div>
+      <div class="content-wrapper">
+        <div class="left-content-column">
+          <div class="taskscomp-and-dropdown">
+            <div class="tasks-completed">8 tasks completed out of 10</div>
+            <div class="tasks-completed-dropdown">
+              Show: <span class="dropdownarrow">This week<span class="arrow-down"></span></span>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <img src="./img/progressbar.png" />
+          </div>
+          <div class="day-of-week">23 December, Sunday</div>
+          
+          <!-- For this section it will likely be two rows, each with seven columns for the day and date -->
+          <!-- <div class="calendar-wrapper">
+            <div class="calendar-top">
+              <div>Sun</div>
+              <div class="active-date">Mon</div>
+              <div>Tues</div>
+              <div>Wed</div>
+              <div>Thurs</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            <div class="calendar-bottom">
+              <div class="special-date">23</div>
+              <div class="active-date">24</div>
+              <div>25</div>
+              <div>26</div>
+              <div>27</div>
+              <div>28</div>
+              <div>29</div>
+            </div>
+          </div> -->
+
+          <!-- This is the new calendar idea based on what we discussed in class -->
+
+          <div class="new-calendar-wrapper">
+            <div class="new-day-wrapper">
+              <div class="new-day">Sun</div>
+              <div class="new-date-selected">23</div>
+            </div>
+            <div class="new-day-wrapper">
+              <div class="new-day special-day">Mon</div>
+              <div class="new-date special-day">24</div>
+            </div>
+            <div class="new-day-wrapper">
+              <div class="new-day">Tue</div>
+              <div class="new-date">25</div>
+            </div>
+            <div class="new-day-wrapper">
+              <div class="new-day">Wed</div>
+              <div class="new-date">26</div>
+            </div>
+            <div class="new-day-wrapper">
+              <div class="new-day">Thu</div>
+              <div class="new-date">27</div>
+            </div>
+            <div class="new-day-wrapper">
+              <div class="new-day">Fri</div>
+              <div class="new-date">28</div>
+            </div>
+            <div class="new-day-wrapper">
+              <div class="new-day">Sat</div>
+              <div class="new-date">29</div>
+            </div>
+          </div>
+          <div class="tasks-wrapper">
+            <ul class="new-task-list">
+              <li class="new-task-item">
+                <div class="new-task-item-top">
+                  <div class="task-item-left-title-trunc">Send benefit review by Sunday</div>
+                  <div class="task-item-type">Reminder</div>
+                </div>
+                <div class="new-task-item-middle">
+                  <div class="due-date-text">Due date: <span>December 23rd, 2018</span></div>
+                  <div></div>
+                </div>
+                <div class="new-task-item-bottom">
+                  <div class="task-profile-info"><img src="./img/george-circle.svg" />George Fields</div>
+                  <div class="completed-button">Completed</div>
+                </div>
+              </li>
+              <li class="new-task-item">
+                <div class="new-task-item-top">
+                  <div class="task-item-left-title">Invite to office meet-up</div>
+                  <div class="task-item-type">Call</div>
+                </div>
+                <div class="new-task-item-middle">
+                  <div class="due-date-text">Due date: <span>December 23rd, 2018</span></div>
+                  <div></div>
+                </div>
+                <div class="new-task-item-bottom">
+                  <div class="task-profile-info"><img src="./img/rebecca-circle.svg" />Rebecca Moore
+                  </div>
+                  <div class="ended-item-line">
+                    <div class="edit-icon"><img src="./img/edit.svg" /></div>
+                    <div><img src="./img/delete.svg" /></div>
+                    <div class="ended-button">Ended</div>
+                  </div>
+                </div>
+              </li>
+              <li class="new-task-item">
+                <div class="new-task-item-top">
+                  <div class="task-item-left-title">Office meet-up</div>
+                  <div class="task-item-type">Event</div>
+                </div>
+                <div class="new-task-item-middle">
+                  <div class="due-date-text">Due date: <span>December 23rd, 2018</span></div>
+                  <div></div>
+                </div>
+                <div class="new-task-item-bottom">
+                  <div class="task-profile-info"><img src="./img/lindsey-circle.svg" />Lindsey Stroud</div>
+                  <div class="completed-button">Completed</div>
+                </div>
+              </li>
+            </ul>
+            <div class="task-list-show-more">Show More</div>
+          </div>
+        </div>
+        <div class="right-content-column">
+          <div class="top-chart-box">
+            <div class="top-chart-topbox">
+              <div class="top-chart-text">Deals</div>
+              <div class="top-chart-dropdown">
+                Show: <span class="dropdownarrow">Monthly<span class="arrow-down"></span></span>
+              </div>
+            </div>
+            <div class="top-chart-bottom">
+              <div class="closed-deals">
+                <img src="./img/closed_deals.svg" />
+              </div>
+              <img src="./img/line-graph.svg" />
+            </div>
+          </div>
+          <div class="bottom-chart-box">
+            <div class="bottom-chart-topbox">
+              <div class="bottom-chart-text">Tasks</div>
+              <div class="bottom-chart-dropdown">
+                Show: <span class="dropdownarrow">This month<span class="arrow-down"></span></span>
+              </div>
+            </div>
+            <div class="bottom-chart-bottom">
+              <div class="bchart-bottom-left">
+                <img src="./img/prog-circle.svg" />
+              </div>
+              <div class="bchart-bottom-right">
+                <ul>
+                  <li class="orange-elipse"><img src="./img/orange-elipse.svg" />Active</li>
+                  <li class="green-elipse"><img src="./img/green-elipse.svg" />Completed</li>
+                  <li class="red-elipse"><img src="./img/red-elipse.svg" />Ended</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="./js/index.js"></script> -->
+</body>
+
+</html>
